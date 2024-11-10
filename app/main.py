@@ -16,7 +16,9 @@ def shop_trip() -> None:
 
         for shop in shops:
             trip_cost = customer.calculate_trip_cost(shop, fuel_price)
-            print(f"{customer.name}'s trip to the {shop.name} costs {trip_cost}")
+            print(
+                f"{customer.name}'s trip to the {shop.name} costs {trip_cost}"
+            )
 
         cheapest_shop = min(
             shops,
